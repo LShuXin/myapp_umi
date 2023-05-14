@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  ssr: {},
   nodeModulesTransform: {
     type: 'none',
   },
@@ -29,6 +30,16 @@ export default defineConfig({
           path: '/live/:id',
           component: '@/pages/live/liveroom',
           title: '直播间',
+        },
+        {
+          path: '/ssrcp',
+          component: '@/pages/ssr/ssrcp',
+          title: '服务端渲染页面1',
+        },
+        {
+          path: '/ssrfp',
+          component: '@/pages/ssr/ssrfp',
+          title: '服务端渲染页面2',
         },
       ],
     },
