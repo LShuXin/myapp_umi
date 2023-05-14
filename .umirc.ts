@@ -20,6 +20,16 @@ export default defineConfig({
           wrappers: ['@/wrappers/auth'],
           title: 'work2',
         },
+        {
+          path: '/moment/:id',
+          component: '@/pages/moment/detail',
+          title: '动态详情',
+        },
+        {
+          path: '/live/:id',
+          component: '@/pages/live/liveroom',
+          title: '直播间',
+        },
       ],
     },
   ],
