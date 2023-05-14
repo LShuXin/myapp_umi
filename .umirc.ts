@@ -11,7 +11,7 @@ export default defineConfig({
       path: '/',
       component: '@/layouts/index',
       routes: [
-        { path: '/index', component: '@/pages/index' },
+        { path: '/index', redirect: '/work1' },
         { path: '/work1', component: '@/pages/work1' },
         { path: '/work2', component: '@/pages/work2' },
       ],
